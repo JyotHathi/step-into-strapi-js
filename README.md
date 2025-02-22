@@ -75,5 +75,5 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 useMarketplaceData
 ```
 
-In above function Comment Lines which using *strapiVersion* variable, two locations will be ther.
+In above function Comment Lines which using *strapiVersion* variable, two locations will be there.
 After applying above change just restart application.
