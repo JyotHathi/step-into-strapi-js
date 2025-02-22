@@ -61,7 +61,19 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
 
 ---
-## Changes to Apply in Node MOdules in case of Issue 
 
-- In case face issue in accessing/loading Marketplace and error is Internal Server error (500) in that case just need to remove passing of Strapi Version. To remove passing strapi version in calls of Marketplace open file node_modules/.strapi/vite/deps/MarketplacePage-CcAYozK2-VEVIE46X.js, in function useMarketplaceData parameter strapiVersion has been passed, just comment all the lines which are using that so that it will not pass.
+# Node Modules Fixes  
+- In case in accessing marketplace facing issue and finds that in reponse of API getting 500 Internal Server error apply below change in below file.
+ 
+ *File location:*
+ ```
+ node_modules/.strapi/vite/deps/MarketplacePage-CcAYozK2-VEVIE46X.js
+```
 
+*Function Name:*
+```
+useMarketplaceData
+```
+
+In above function Comment Lines which using *strapiVersion* variable, two locations will be ther.
+After applying above change just restart application.
